@@ -229,6 +229,69 @@ node chapter10_loops/71_For_loop.js
 
 ---
 
+### Chapter 11: Arrays (`chapter11_array/`)
+
+Covers JavaScript arrays — creation, access, add/remove, search, iterate, transform, sort, slice, concat, and checking.
+
+| File | Description |
+|------|-------------|
+| `83_Arrays.js` | Array basics — empty array, index access, mixed types |
+| `84_Arrays.js` | Creating arrays — array literal, `new Array()`, `Array.of()`, `Array.from()` |
+| `85_Access_Array.js` | Accessing & modifying arrays — index, `at()`, and reassignment |
+| `86_Arrays_Adding_Remove.js` | Add/remove elements — `push`, `pop`, `unshift`, `shift` |
+| `87_Adding_Remove2.js` | `splice()` — add, remove, replace elements at any position |
+| `88_REAL_Example.js` | Real-world array — browser list with `pop`, `shift`, and `for` loop |
+| `89_Searching.js` | Searching arrays — `indexOf`, `lastIndexOf`, `includes`, `find`, `findIndex`, `findLast` |
+| `90_Iterate.js` | Iterating arrays — `for`, `for...of`, `forEach`, `for...in`, `entries()` |
+| `91_Transform_Array.js` | Transforming arrays — `map`, `filter`, `reduce`, `flat` |
+| `92_Arrays.js` | Sorting arrays — `sort()`, numeric sort, ascending/descending |
+| `93_Array_Slicing.js` | Slicing & splicing — `slice()` vs `splice()` |
+| `94_Concat_array.js` | Concatenating arrays — `concat()`, spread operator, `join()` |
+| `95_Array_Checking.js` | Checking arrays — `Array.isArray()`, `every()`, `some()` |
+
+**How to run:**
+```bash
+node chapter11_array/83_Arrays.js
+```
+
+---
+
+### Chapter 12: Functions (`chapter12_functions/`)
+
+Covers JavaScript functions in depth — types, expressions, arrow functions, IIFE, closures, higher-order functions, and more.
+
+| File | Description |
+|------|-------------|
+| `96_Functions.js` | Function basics — define and call a function |
+| `97_Type1_Fn_Basic_Functions.js` | Type 1 function — no parameters, no return |
+| `98_Type2_Fn_With_Param_No_Return.js` | Type 2 function — with parameters, no return |
+| `99_Type3_Fn_without_Param_Return_Type.js` | Type 3 function — no parameters, with return |
+| `100_Type4_Fn_With_Param_With_Return.js` | Type 4 function — with parameters and return |
+| `101_Template_literal.js` | Template literal (empty) |
+| `102_Fn_Expression.js` | Function expressions — assigning functions to variables |
+| `103_Arrow_Fn.js` | Arrow functions (ES6) — shorthand syntax, conversions from normal functions |
+| `104_Arrow_Fn_REAL.js` | Arrow functions real-world — normal vs expression vs arrow for status validation |
+| `105_IIFE.js` | Immediately Invoked Function Expressions (IIFE) — run on definition |
+| `106_Default_Param_Fn.js` | Default parameters — fallback values in function signatures |
+| `107_IQ.js` | IQ — function with template literal return |
+| `108_Rest_Param_Fn.js` | Rest parameters (`...args`) — variable number of arguments |
+| `109_IQ.js` | IQ — function hoisting with function expressions (ReferenceError) |
+| `110_Spead_IQ.js` | Spread operator in functions — spread array as arguments, `hasError` utility |
+| `111_Scope.js` | Function scope — global vs local scope access |
+| `112_IQ.js` | IQ — nested function scope and block scope access |
+| `113_Closure.js` | Closures — inner function retaining access to outer function's variables |
+| `114_Closure.js` | Closure practical — `makeCounter` with increment/decrement/get methods |
+| `115_API_REAL_Closure.js` | Real-world closure — retry tracker for API testing |
+| `116_Higher_Order_Fn.js` | Higher-order functions — functions that take or return functions |
+| `117_Pure_Fn.js` | Pure functions — predictable output, no side effects vs impure functions |
+
+**How to run:**
+```bash
+node chapter12_functions/96_Functions.js
+```
+
+---
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) installed on your system
