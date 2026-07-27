@@ -6,7 +6,7 @@ A hands-on repository for learning Playwright automation with JavaScript fundame
 
 ## Chapters Overview
 
-### Chapter 01: Basics (`chapter_01_Basics/`)
+### Chapter 01: Basics (`chapter01_Basics/`)
 
 Covers the very basics of JavaScript and Node.js setup.
 
@@ -19,7 +19,7 @@ Covers the very basics of JavaScript and Node.js setup.
 
 **How to run:**
 ```bash
-node chapter_01_Basics/01_Basics.js
+node chapter01_Basics/01_Basics.js
 ```
 
 ---
@@ -138,6 +138,97 @@ node chapter06_operator/30_Assign_operator.js
 
 ---
 
+### Chapter 07: If-Else Statements (`chapter07_If_else/`)
+
+Covers conditional statements — `if`, `else if`, `else`, nested conditions, and real-world examples.
+
+| File | Description |
+|------|-------------|
+| `48_IF_ESLE.js` | Basic `if-else` — age check for voting eligibility |
+| `49_If_elseif_else.js` | `if-else if-else` chain — grade classification based on score |
+| `50_REAL_IF_ELSE.js` | Real-world nested if-else — user role-based access control (admin/editor/viewer) |
+| `51_API_IF_ELSE.js` | API status code handling with `if-else if-else` |
+| `52_IQ_IF_ELSE.js` | IQ — truthy/falsy values in conditions (0, null, undefined, NaN, empty string) |
+| `53_IF_ELSE_real.js` | Logical operators + if-else — combined conditions for login with locked account check |
+| `54_IQ.js` | IQ — single-line `if` without braces |
+| `55_IE.js` | `if-else` for even/odd check and grade calculator |
+| `56_IQ_EVEN_ODD.js` | Even/odd check using modulus operator |
+| `57_Grade_Calc.js` | Grade calculator — marks to grade conversion using `if-else if-else` |
+| `58_LEAP_YEAR.js` | Leap year check — divisible by 4, 100, and 400 rules |
+
+**How to run:**
+```bash
+node chapter07_If_else/48_IF_ESLE.js
+```
+
+---
+
+### Chapter 08: Switch Statement (`chapter08_switch_statement/`)
+
+Covers `switch` statement — `case`, `break`, `default`, fall-through behavior, grouped cases, and IQ questions.
+
+| File | Description |
+|------|-------------|
+| `59_Switch.js` | Basic `switch` statement — day of the week mapping |
+| `60_No_Break.js` | Switch without `break` — fall-through behavior demonstration |
+| `61_Default.js` | Switch with `default` — handling invalid day values |
+| `62_REAL_TIME_EXAMPLE.js` | Real-world switch — API response code handling (200, 404) |
+| `63_Switch_Group.js` | Grouped switch cases — Chromium browsers (Chrome, Edge, Brave, Opera) grouped together |
+| `64_IQ.js` | IQ — switch fall-through with fruit selection (no breaks) |
+| `65_IQ2.js` | IQ — `switch(true)` pattern for range-based grading |
+| `66_IQ3.js` | IQ — duplicate `case` values and variable declarations inside switch |
+| `67_IQ4.js` | IQ — type coercion in switch (number 0 vs boolean false) |
+
+**How to run:**
+```bash
+node chapter08_switch_statement/59_Switch.js
+```
+
+---
+
+### Chapter 09: User Input (`chapter09_userinput/`)
+
+Covers different ways to accept user input in JavaScript.
+
+| File | Description |
+|------|-------------|
+| `68_User_Input.js` | Browser `prompt()` — accepting user input in browser environment |
+| `69_Node_readline.js` | Node.js `readline` module — reading user input from terminal |
+| `70_prompt_sync.js` | `prompt-sync` package — synchronous prompt for Node.js scripts |
+
+**How to run:**
+```bash
+node chapter09_userinput/68_User_Input.js
+```
+
+---
+
+### Chapter 10: Loops (`chapter10_loops/`)
+
+Covers all loop types — `for`, `while`, `do-while`, `continue`, and loop IQ questions.
+
+| File | Description |
+|------|-------------|
+| `71_For_loop.js` | Introduction to loops — why loops are needed |
+| `72_For_loop.js` | Basic `for` loop — 0 to 5 with `<=` condition |
+| `73_For_Loop2.js` | `for` loop variations — custom variable names, 0 to 10 range |
+| `74_IQ.js` | IQ — `for` loop with conditions and gift logic |
+| `75_For_OF_IN_EACH.js` | `for` loop with `while` — attempt/retry pattern (preview of `for...of`, `for...in`, `forEach`) |
+| `76_While.js` | `while` loop — basic syntax, retry counter, 1 to 15 print |
+| `77_Do_While.js` | `do-while` loop — executes at least once before checking condition |
+| `78_Do_While.js` | `do-while` real-world — retry logic with attempt counter |
+| `79_IQ.js` | IQ — `while` loop with countdown (5 to 1) |
+| `80_IQ.js` | IQ — `do-while` with decrement (runs once even when condition is false) |
+| `81_IQ.js` | IQ — `continue` keyword in `for` loop (skipping iteration) |
+| `82_IQ.js` | IQ — `do-while` with infinite loop (no update to variable) |
+
+**How to run:**
+```bash
+node chapter10_loops/71_For_loop.js
+```
+
+---
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) installed on your system
@@ -157,5 +248,5 @@ cd LearnPlaywrightBatch2x-Bibhu
 
 3. Run any file using Node.js:
 ```bash
-node chapter_01_Basics/01_Basics.js
+node chapter01_Basics/01_Basics.js
 ```
