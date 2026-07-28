@@ -384,6 +384,69 @@ node chapter16_callback/143_Callback.js
 
 ---
 
+### Chapter 17: Promises (`chapter17_promises/`)
+
+Covers JavaScript Promises — creating, resolving, rejecting, chaining, `Promise.all`, `Promise.allSettled`, and real-world API scenarios.
+
+| File | Description |
+|------|-------------|
+| `154_Promise.js` | Promise basics — `resolve`/`reject` with food delivery analogy |
+| `155_Promise_REAL_API.js` | Real-world API promise — resolving with status code and body |
+| `156_Promise_REAL_API_PART2.js` | Promise rejection — `.then()` vs `.catch()` for error handling |
+| `157_Finally.js` | `.finally()` — cleanup code that runs regardless of resolve/reject |
+| `158_Call_Py_Problem.js` | Promise chaining — 4-step E2E login flow using `.then()` chain (callback hell solution) |
+| `159_Promise_ALL.js` | `Promise.all` vs `Promise.allSettled` — parallel execution, fail-fast vs report-all |
+| `160_Promise_IQ.js` | Promise IQ questions — chaining, error handling, `allSettled` test report |
+
+**How to run:**
+```bash
+node chapter17_promises/154_Promise.js
+```
+
+---
+
+### Chapter 18: Async/Await (`chapter18_async_await/`)
+
+Covers `async/await` — converting promise chains to async/await, sequential vs parallel execution, and Playwright integration.
+
+| File | Description |
+|------|-------------|
+| `161_Async.js` | Basic `async/await` — try/catch/finally error handling |
+| `162_Aysnc_P2.js` | Await with function returning promise — token retrieval example |
+| `163_PyODom.js` | 4-step E2E login with `async/await` — cleaner alternative to callback hell |
+| `164_Async_Ex.js` | `async` function returns a promise — basic Playwright test example |
+| `165_AA_Parallel.js` | Parallel execution — `Promise.allSettled` for concurrent API calls |
+| `165_AA_Seq.js` | Sequential execution — awaiting each step, timing measurement |
+| `166_IQ.js` | IQ questions — `async` return value, status code, multi-step flow |
+| `167_ACLogin.js` | Playwright real test — `async` login test with `test.step` and assertions |
+
+**How to run:**
+```bash
+node chapter18_async_await/161_Async.js
+```
+
+---
+
+### Chapter 19: Playwright Basic Setup (`chapter19_playwright_basic/`)
+
+Playwright setup and configuration — package.json with Playwright dependency, node_modules, and test artifacts.
+
+| File | Description |
+|------|-------------|
+| `package.json` | Playwright project setup — `playwright` v1.62.0 dependency |
+| `package-lock.json` | Locked dependency versions |
+| `node_modules/` | Installed Playwright packages |
+| `abb.pdf` | Test artifact (PDF) |
+
+**Setup commands:**
+```bash
+cd chapter19_playwright_basic
+npm install
+npx playwright install
+```
+
+---
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) installed on your system
