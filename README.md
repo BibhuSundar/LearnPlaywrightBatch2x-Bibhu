@@ -292,6 +292,98 @@ node chapter12_functions/96_Functions.js
 
 ---
 
+### Chapter 13: Strings (`chapter13_strings/`)
+
+Covers JavaScript strings — creation, properties, searching, substring, transformation, and type conversion.
+
+| File | Description |
+|------|-------------|
+| `118_Strings.js` | String basics — single/double quotes, template literals, multiline, `String()` conversion |
+| `119_String_Properties.js` | String properties — `length`, index access, `at()`, `charAt()`, `charCodeAt()` |
+| `120_Search_Check_Str.js` | Searching strings — `includes`, `startsWith`, `endsWith`, `indexOf`, `lastIndexOf`, `search` with regex |
+| `121_Substring.js` | Substrings — `slice()` vs `substring()` with negative indexes |
+| `122_Transform_Str.js` | String transformations — `toUpperCase`, `toLowerCase`, `trim`, `replace`, `replaceAll`, `split`, `join` |
+| `123_SC.js` | String conversion — `toString()`, `Number()`, `parseInt()`, `parseFloat()` |
+
+**How to run:**
+```bash
+node chapter13_strings/118_Strings.js
+```
+
+---
+
+### Chapter 14: Objects (`chapter14_objects/`)
+
+Covers JavaScript objects — creation, properties, methods, destructuring, spread, `get`/`set`, and real-world examples.
+
+| File | Description |
+|------|-------------|
+| `124_Objects.js` | Object basics — empty object, key-value pairs, JSON format |
+| `125_Objects2.js` | Object access — dot notation vs bracket notation, reference assignment, `===` comparison |
+| `126_Objects_Creation.js` | Object creation — reference comparison between two identical objects |
+| `127_Objects_REAL.js` | Real-world object — config object with dynamic property add/delete |
+| `128_Primitive_Ref.js` | Primitive vs reference types — value copy vs reference copy for objects |
+| `129_Ob_Examples.js` | Object examples — JSON-style vs JS-style key notation |
+| `130_IQ.js` | IQ — dynamic property access, adding/modifying properties, `getOwnPropertyDescriptor` |
+| `131_Object_Fn.js` | Methods in objects — functions as object properties |
+| `132_Obj_Decon.js` | Destructuring — basic, renaming, default values, nested destructuring |
+| `133_Spead.js` | Spread operator for objects — copying, merging, modifying config objects |
+| `134_Objects_GET_SET_Methods.js` | `get`/`set` methods — computed properties with `fullName` example |
+| `135_IQ.js` | IQ — `Object.keys()`, `Object.values()`, `Object.entries()`, `for...in` loop |
+| `136_Obj_REAL.js` | Real-world objects — environment config, API response structure, Playwright config |
+| `137_Let_const_obj.js` | `let` vs `const` for objects — modifying properties allowed, reassignment blocked for `const` |
+
+**How to run:**
+```bash
+node chapter14_objects/124_Objects.js
+```
+
+---
+
+### Chapter 15: 2D Arrays (`chapter15_2D_array/`)
+
+Covers 2D arrays (matrices) — creation, access, iteration, real-world test matrices, and pattern printing.
+
+| File | Description |
+|------|-------------|
+| `138_2D_Array.js` | 2D array basics — grid creation, nested `for` loop to print all elements |
+| `139_2d.js` | 2D array access — row/column access, `.length` for rows and columns |
+| `140_REAL.js` | Real-world 2D array — test matrix with `for`, `for...of`, and `forEach` iteration |
+| `141_2d_Array_Fn.js` | 2D array with functions — `map`/`reduce` for row sums, filtering failed test cases |
+| `142_IQ_Right_Pattern_Py.js` | IQ — right-angled triangle pattern using nested loops |
+
+**How to run:**
+```bash
+node chapter15_2D_array/138_2D_Array.js
+```
+
+---
+
+### Chapter 16: Callbacks (`chapter16_callback/`)
+
+Covers JavaScript callbacks — synchronous, asynchronous, callback hell, and real-world QA scenarios.
+
+| File | Description |
+|------|-------------|
+| `143_Callback.js` | Callback basics — named, anonymous, and arrow function callbacks |
+| `144_CB.js` | Callback in Playwright `test()` syntax |
+| `145_CB_Fn.js` | Callback as argument — cafe table ready notification pattern |
+| `146_PW_CB.js` | Playwright-style callback — `test()` with callback for test execution |
+| `147_JS_CB.js` | JavaScript async behavior — `setTimeout` and why code order matters |
+| `148_Sync_CB.js` | Synchronous callback — `forEach` processing array items one by one |
+| `149_Async_CB.js` | Asynchronous callback — `setTimeout` execution order demonstration |
+| `150_CB_Hell.js` | Callback hell — 4-step E2E login flow with nested callbacks |
+| `151_CB_Hell_20_Steps.js` | Callback hell deep dive — 24-step E2E checkout journey (Pyramid of Doom) |
+| `152_CB_Parameter.js` | Callback as parameter — passing functions as arguments |
+| `153_CB_Return.js` | Callback as return — functions returning other functions |
+
+**How to run:**
+```bash
+node chapter16_callback/143_Callback.js
+```
+
+---
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) installed on your system
