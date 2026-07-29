@@ -445,6 +445,58 @@ npm install
 npx playwright install
 ```
 
+| `tests/codegen-tta-cart.spec.ts` | Playwright Codegen-generated test — login flow with assertions |
+| `playwright.config.ts` | Playwright test configuration |
+| `abb.pdf` | Test artifact (PDF) |
+
+**Setup commands:**
+```bash
+cd chapter19_playwright_basic
+npm install
+npx playwright install
+```
+
+---
+
+### Chapter 20: Import & Export (`chapter20_import_expoert/`)
+
+Covers ES6 modules — named exports, default exports, imports with aliases, and cross-file dependencies.
+
+| File | Description |
+|------|-------------|
+| `EXPORT_IMPORT/168_EXPORT_IMPORT.js` | Named imports — importing `BASE_URL`, `formatUpperCaseString`, `fname` from `testutils.js` |
+| `EXPORT_IMPORT/169_Utils.js` | Import with aliases — renaming imports from multiple modules using `as` |
+| `EXPORT_IMPORT/170_Logger.js` | Default import — importing the default `log` function from `logger.js` |
+| `logger.js` | Combined exports — default and named exports from a single module |
+| `testutils.js` | Named exports — exporting URL, function, and variable |
+| `utils.js` | Named exports — alternate staging URL and test name formatter |
+
+**How to run:**
+```bash
+node chapter20_import_expoert/EXPORT_IMPORT/168_EXPORT_IMPORT.js
+```
+
+---
+
+### Chapter 21: Classes & Objects (`chapter21_Classes_and_Objects/`)
+
+Covers OOP in JavaScript — classes, constructors, methods, private fields, static members, and real-world browser/test case examples.
+
+| File | Description |
+|------|-------------|
+| `171_Class_Object.js` | Class basics — `Person` class with attributes (name, email) and methods (sleep, eat, walk) |
+| `172_Class_Object2.js` | Constructor — constructor runs automatically when object is created with `new` |
+| `173_Car.js` | Parameterized constructor — `Car` class with `name` and `drive()` method |
+| `174_REAL_Browser.js` | Real-world class — `TestCase` with name, status, priority and `display()` method |
+| `175_IQ.js` | IQ — `Browser` class with constructor and `launched` status tracking |
+| `176_Private_Public.js` | Private fields (`#`) — `Credentials` class with private `#apiKey` and custom getter |
+| `177_Static.js` | Static members — reserved for static keyword demonstration |
+
+**How to run:**
+```bash
+node chapter21_Classes_and_Objects/171_Class_Object.js
+```
+
 ---
 
 ## Prerequisites
