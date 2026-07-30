@@ -436,7 +436,143 @@ Playwright setup and configuration — package.json with Playwright dependency, 
 | `package.json` | Playwright project setup — `playwright` v1.62.0 dependency |
 | `package-lock.json` | Locked dependency versions |
 | `node_modules/` | Installed Playwright packages |
-| `abb.pdf` | Test artifact (PDF) |
+| `tests/codegen-tta-cart.spec.ts` | Playwright Codegen-generated test — login flow with assertions |
+| `playwright.config.ts` | Playwright test configuration |
+ | `abb.pdf` | Test artifact (PDF) |
+### Chapter 22: Encapsulation (`chapter22_encapuslation/`)
+Covers encapsulation using private fields (`#`) with getters/setters — bank accounts, car engines, and OOP interview exercises.
+| File | Description |
+|------|-------------|
+| `179_Ecap.js` | Private `#balance` — deposit and getBalance methods |
+| `180_REAK_EXAMPLE.js` | Private children fields with `getChild1`/`setChild1` |
+| `181_Ecap_Car.js` | Car class with private `#engine` and getter/setter |
+| `182_ECap_Bank.js` | ICICI bank account — setBalance with cashier permission check |
+| `IQ.js` | OOP exercises — Bug class, Environment defaults, User greeting, Counter chaining |
+**How to run:**
+```bash
+node chapter22_encapuslation/179_Ecap.js
+```
+---
+### Chapter 23: Inheritance (`chapter23_Inheritance/`)
+Covers single, multilevel, hierarchical inheritance with `extends` and `super` — real-world Page Object Model examples.
+| File | Description |
+|------|-------------|
+| `183_Single_Inheritance.js` | Single inheritance — `LoginPage` extends `BasePage` |
+| `184_SI_Example.js` | `Dog` extends `Animal` — calling `super(name)` |
+| `186_IQ.js` | `super.setup()` / `super.teardown()` — UI test lifecycle |
+| `187_IQ2.js` | Polymorphic inheritance — `TestCase` with `UnitTest`, `APITest`, `E2ETest` |
+| `188_REAL_PageObject_Model.js` | Page Object Model — `LoginPage`, `DashboardPage`, `CartPage` extend `BasePage` |
+| `189_Multiple_Inheritance.js` | Multiple inheritance attempt — JS does not support `class C extends A, B` |
+| `190_Multiple_Level_Inheritance.js` | Multilevel — `AdminPage` → `AuthPage` → `BasePage` |
+| `191_Hierarchial_Inheritance.js` | Hierarchical — `Son1` and `Son2` both extend `Father` |
+**How to run:**
+```bash
+node chapter23_Inheritance/183_Single_Inheritance.js
+```
+---
+### Chapter 24: Polymorphism (`chapter24_polymerphism/`)
+Covers method overriding — redefining parent class methods in child classes.
+| File | Description |
+|------|-------------|
+| `192_Method_Overriding.js` | `APIPage` overrides `BaseTest.setup()` |
+**How to run:**
+```bash
+node chapter24_polymerphism/192_Method_Overriding.js
+```
+---
+### Chapter 25: OOP Interview Questions (`chapter25_oops_interview_questions/`)
+OOP exercises — Bug class, Environment defaults, User greeting, and method chaining with Counter.
+| File | Description |
+|------|-------------|
+| `ex1.js` | Bug class with title, severity, and display method |
+| `ex2.js` | Environment class with default params (staging, port 3000) |
+| `ex3.js` | User class — `this.name` in greet method |
+| `ex4.js` | Counter — method chaining with `return this` |
+**How to run:**
+```bash
+node chapter25_oops_interview_questions/ex1.js
+```
+---
+### Chapter 26: TypeScript Basics (`chapter26_typescript/`)
+Covers TypeScript fundamentals — type annotations, functions, arrays, and type systems.
+| File | Description |
+|------|-------------|
+| `193_TS.js` | Plain JS — testName and add function (no types) |
+| `194_TS_HelloWorld.ts` | TypeScript Hello World — typed variables and function with `: number` |
+| `195_TS_Part1.ts` | Basic TS — `msg: string`, `void` return type |
+| `196_TS_Part2.ts` | TS types — string, number, boolean, null, undefined, arrays, any, unknown |
+| `197_TS_Part2.ts` | Functions & objects — typed arrow functions, object type annotations |
+| `198_Part3.ts` | Return types — `string`, `void`, `never` (throw/infinite) |
+| `199_IQ.ts` | IQ — `buildEndpoint`, `isSuccessCode`, `logTestStep` functions |
+| `200_IQ.ts` | IQ — `getFailedCodes` with array filter |
+**How to run:**
+```bash
+npx tsx chapter26_typescript/194_TS_HelloWorld.ts
+```
+---
+### Chapter 27: Interfaces (`chapter27_interface/`)
+Covers TypeScript interfaces — optional/readonly properties, function types, extension, and class implementation.
+| File | Description |
+|------|-------------|
+| `201_IF.ts` | Interface basics — `TestCase` interface with id, name, status, duration |
+| `202_IF_Part2.ts` | Optional properties — `APIResponse` with `?` optional fields |
+| `203_IF_READONLY.ts` | Readonly — `APIReponse` with `readonly statusCode` |
+| `204_IF_READOnly.ts` | Readonly array & point — `readonly x: number` |
+| `205_Interface.ts` | Empty interface (placeholder) |
+| `206_Hooks.ts` | Function type interface — `TestHook` callback signature |
+| `207_bug_REPORT.ts` | BugReport interface — array fields for steps to reproduce |
+| `208_TestConfig.ts` | TestConfig — CI vs local config with optional timeout/retries |
+| `209_REAL_EXAMPLE.ts` | Interface extension — `LoginPage` and `FreeTrailPage` extend `BasePage` |
+| `210_Class_Interface.ts` | Class implements interface — `TestCase` implements `Executable` |
+**How to run:**
+```bash
+npx tsx chapter27_interface/201_IF.ts
+```
+---
+### Chapter 28: Enums (`chapter28_enums/`)
+Covers TypeScript enums — string enums for test status, severity, browsers, HTTP methods, and environments.
+| File | Description |
+|------|-------------|
+| `211_ENUM.ts` | TestStatus enum — Pass, Fail, Skip, Pending, Blocked |
+| `212_Enum_Fn.ts` | SeverityLevels and Environment enums — string values |
+| `213_ENUM.ts` | Browser enum — switch-case for Chrome, Firefox, Safari, Edge |
+| `214_API.ts` | HTTPMethod enum — GET, POST, PUT, DELETE with sendRequest |
+**How to run:**
+```bash
+npx tsx chapter28_enums/211_ENUM.ts
+```
+---
+### Chapter 29: TypeScript Generics (`chapter29_typescript_generic/`)
+Covers TypeScript generics — generic functions, generic classes, and typed API response wrappers.
+| File | Description |
+|------|-------------|
+| `215_Generic.ts` | Generic function — `getFirstResult<T>()` works with numbers or strings |
+| `216_Generic_Class.ts` | Generic class — `TestDataStorage<T>` with add, getFirst, getAll, count |
+| `217_Generic_API_RESPONSE.ts` | Generic API wrapper — `wrapResponse<T>()` returns typed status+data |
+**How to run:**
+```bash
+npx tsx chapter29_typescript_generic/215_Generic.ts
+```
+---
+### Chapter 30: Access Modifiers (`chapter30_public_private_protected/`)
+Covers public, private, protected, readonly, and abstract classes in TypeScript — real-world Page Object Model.
+| File | Description |
+|------|-------------|
+| `218_PPP.ts` | Public/private/protected — `APIClient` with private `apiKey` and auth header |
+| `219_PageObjectModel.ts` | Protected `navigate()` — `LoginPage` extends `BasePage` with POM pattern |
+| `220_READONLY.ts` | Readonly config — `PlaywrightConfig` with URL, timeout, retries |
+| `221_Abstract_Class.ts` | Abstract class — `BaseTest` with abstract `setup()`, `execute()`, `teardown()` |
+**How to run:**
+```bash
+npx tsx chapter30_public_private_protected/218_PPP.ts
+```
+---
+### Project Configuration
+| File | Description |
+|------|-------------|
+| `package.json` | Root project config — scripts (`ts-run`), tsx and TypeScript dev deps |
+| `tsconfig.json` | TypeScript compiler config — strict mode, nodenext module, ESNext target |
+| `.vscode/settings.json` | VS Code Code Runner config — uses `npx tsx` for TypeScript files |
 
 **Setup commands:**
 ```bash
