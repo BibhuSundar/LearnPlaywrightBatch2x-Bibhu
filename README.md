@@ -663,6 +663,27 @@ npx tsx chapter30_public_private_protected/218_PPP.ts
 
 ---
 
+### Chapter 31: Type Override & Decorators (`chapter31_Type_Overide_Decortors/`)
+
+Covers TypeScript type assertions (`as`), type aliases (`type`), method overriding, and decorators (Stage 3) with real-world test scenarios.
+
+| File | Description |
+|------|-------------|
+| `222_Type_As.ts` | Type assertion — casting `unknown` element with `as` |
+| `223_Type_Alias_As.ts` | Type alias — `type APIResponse` with assertion |
+| `224_Override.ts` | Method override — `APIChain` overrides `BaseTest` methods |
+| `225_IQ.ts` | Override IQ — `Son` overrides `Father.home()` |
+| `226_Decorator.ts` | Decorator — `@Log` logs method calls with args |
+| `227_Decortors_2.ts` | Decorator — `@logged` wraps method with console log |
+| `228_Multiple_Decor.ts` | Multiple decorators — `@beforeSomething`, `@afterSomething` on `makeDinner` |
+
+**How to run:**
+```bash
+npx tsx chapter31_Type_Overide_Decortors/222_Type_As.ts
+```
+
+---
+
 ### Project Configuration
 
 | File | Description |
