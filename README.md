@@ -684,6 +684,23 @@ npx tsx chapter31_Type_Overide_Decortors/222_Type_As.ts
 
 ---
 
+### Chapter 32: Playwright Fundamentals (`chapter32_playwright_fundamental/`)
+
+Covers Playwright test runner setup — configuration, test specs, browser projects (Chromium, Firefox, WebKit), and basic web testing.
+
+| File | Description |
+|------|-------------|
+| `playwright.config.ts` | Playwright config — 3 browser projects, HTML reporter, fully parallel |
+| `tests/example.spec.ts` | Test spec — "has title" and "get started link" tests on playwright.dev |
+
+**How to run:**
+```bash
+cd chapter32_playwright_fundamental
+npx playwright test
+```
+
+---
+
 ### Project Configuration
 
 | File | Description |
